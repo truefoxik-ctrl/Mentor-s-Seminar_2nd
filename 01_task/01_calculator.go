@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	var x, y int
 	var action string
+	fmt.Println("Введите два числа и символ арифметической операции между ними")
 	fmt.Scan(&x, &y)
 	fmt.Scan(&action)
 
@@ -21,5 +22,7 @@ func main() {
 		} else {
 			fmt.Print("Деление на 0 невозможно")
 		}
+	default:
+		fmt.Print("Неизвестная операция")
 	}
 }
